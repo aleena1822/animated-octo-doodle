@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Form Validation </h1>
+    <form action="success.html">
+        <p>
+            <label for="username">Username:
+                <input type="text"  onkeyup="return validatename()" id="user">
+
+            </label>
+        </p>
+        <p> <span id="err"></span></p>
+        <p>
+            <label for="password">password:
+                <input type="password"
+                id="pass" onkeyup="return validatepass()">
+
+            </label>
+            </p>
+            <p> <span id ="err1"></span></p>
+        <p>
+            <button type="submit" onclick="return validateform()"> Log In</button>
+        </p>
+
+    </form>
+    <script src="form.js"></script>
+</body>
+</html>
